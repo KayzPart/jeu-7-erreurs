@@ -1,0 +1,52 @@
+body{
+    background-color: beige;
+}
+.main{
+    display: flex;
+    justify-content: space-around;
+}
+#check-erreur{
+    position: relative;
+}
+#erreur-chien{
+ position: absolute;
+ bottom: 32%;
+ right: 37%;
+ opacity: 0;
+}
+#erreur-lampe{
+    position: absolute;
+    right: 37.1%;
+    top: 34.6%;
+    opacity: 0;
+}
+#erreur-livre{
+    position: absolute;
+    top: 29.1%;
+    left: 37.3%;
+    opacity: 0;
+}
+#objet-etagere{
+    position: absolute;
+    right: 46%;
+    top: 15.4%;
+    opacity: 0;
+}
+#point-mur{
+    position: absolute;
+    top: 4.5%;
+    right: 1.6%;
+    opacity: 0;
+}
+#sol{
+    position: absolute;
+    bottom: 20.5%;
+    left: 26.3%;
+    opacity: 0;
+}
+#statue{
+    position: absolute;
+    left: 18.6%;
+    top: 26.5%;
+    opacity: 0;
+}
