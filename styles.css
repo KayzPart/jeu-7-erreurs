@@ -30,6 +30,7 @@ h1{
 #check-erreur{
     position: relative;
 }
+/* Facile */
 #erreur-chien{
  position: absolute;
  bottom: 32%;
@@ -72,6 +73,59 @@ h1{
     top: 26.5%;
     opacity: 0;
 }
+
+/* Moyen */
+#bouton-trancheuse{
+    position: absolute;
+    opacity: 0;
+}
+#couleur-assiette{
+    position: absolute;
+    opacity: 0;
+}
+#fissure{
+    position: absolute;
+    opacity: 0;
+}
+#fleur-plat{
+    position: absolute;
+    opacity: 0;
+}
+#fleur-serviette{
+    position: absolute;
+    opacity: 0;
+}
+#manche-cuivre{
+    position: absolute;
+    opacity: 0;
+}
+#mosaique{
+    position: absolute;
+    opacity: 0;
+}
+#plaque-trancheuse{
+    position: absolute;
+    opacity: 0;
+}
+#poignée-porte{
+    position: absolute;
+    opacity: 0;
+}
+#pomme{
+    position: absolute;
+    opacity: 0;
+}
+#pot-couleur{
+    position: absolute;
+    opacity: 0;
+}
+#prise{
+    position: absolute;
+    left: 29%;
+    bottom: 24.5%;
+    /* opacity: 0; */
+}
+
 
 /* Retoucher image erreur car mal détourer */
 @media screen and (max-width: 1280px) {

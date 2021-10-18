@@ -87,6 +87,110 @@ facile.addEventListener('click', function(){
     facile.disabled = true;   
 })
 
+// Niveau moyen
+moyen.addEventListener('click', function(){
+    imgOriginal = document.createElement('img');
+    imgOriginal.src = "./Ressources/cuisine.jpg" ;
+    imgOriginal.alt = "image-original-cuisine" ;
+    original.appendChild(imgOriginal);
+
+    imgErreur = document.createElement('img');
+    imgErreur.src = "./Ressources/cuisineErreur.gif";
+    imgErreur.alt = "cuisine-chercher-les-erreurs";
+    checkErreur.appendChild(imgErreur);
+
+    // Erreur bouton trancheuse
+    var imgErrOne = document.createElement('img');
+        imgErrOne.src = "./Ressources/bouton-trancheuse.png";
+        imgErrOne.alt = "erreur-bouton-trancheuse";
+        imgErrOne.id = "bouton-trancheuse";
+        checkErreur.appendChild(imgErrOne);
+
+    // Erreur couleur assiette
+        var imgErrTwo = document.createElement('img');
+        imgErrTwo.src = "./Ressources/couleur-assiette.png";
+        imgErrTwo.alt = "erreur-couleur-assiette";
+        imgErrTwo.id = "couleur-assiette";
+        checkErreur.appendChild(imgErrTwo);
+
+    // Erreur fissure
+        var imgErrThree = document.createElement('img');
+        imgErrThree.src = "./Ressources/fissure.png";
+        imgErrThree.alt = "erreur-fissure";
+        imgErrThree.id = "fissure";
+        checkErreur.appendChild(imgErrThree);
+
+    // Erreur fleur-plat
+        var imgErrFour = document.createElement('img');
+        imgErrFour.src = "./Ressources/fleur-plat.png";
+        imgErrFour.alt = "erreur-fleur-plat";
+        imgErrFour.id = "fleur-plat";
+        checkErreur.appendChild(imgErrFour);
+
+    // Erreur fleur serviette
+        var imgErrFive = document.createElement('img');
+        imgErrFive.src = "./Ressources/fleur-serviette.png";
+        imgErrFive.alt = "erreur-fleur-serviette";
+        imgErrFive.id = "fleur-serviette";
+        checkErreur.appendChild(imgErrFive);
+
+    // Erreur manche cuivre
+        var imgErrSix = document.createElement('img');
+        imgErrSix.src = "./Ressources/manche-cuivre.png";
+        imgErrSix.alt = "erreur-manche-cuivre";
+        imgErrSix.id = "manche-cuivre";
+        checkErreur.appendChild(imgErrSix);
+
+    // Erreur mosaïque
+        var imgErrSeven = document.createElement('img');
+        imgErrSeven.src = "./Ressources/mosaîque.png";
+        imgErrSeven.alt = "erreur-mosaique";
+        imgErrSeven.id = "mosaique";
+        checkErreur.appendChild(imgErrSeven);
+
+    // Erreur plaque-trancheuse
+        var imgErrHeight = document.createElement('img')
+        imgErrHeight.src = "./Ressources/plaque-trancheuse.png";
+        imgErrHeight.alt = "erreur-plaque-trancheuse";
+        imgErrHeight.id = "plaque-trancheuse";
+        checkErreur.appendChild(imgErrHeight);
+
+    //  Erreur poignée porte
+        var imgErrNine = document.createElement('img')
+        imgErrNine.src = "./Ressources/poignée-porte.png";
+        imgErrNine.alt = "erreur-poignée-porte";
+        imgErrNine.id = "poignée-porte";
+        checkErreur.appendChild(imgErrNine);
+
+    // Erreur pomme
+        var imgErrTen = document.createElement('img')
+        imgErrTen.src = "./Ressources/pomme.png";
+        imgErrTen.alt = "erreur-pomme";
+        imgErrTen.id = "pomme";
+        checkErreur.appendChild(imgErrTen);
+
+    // Erreur pot-couleur
+        var imgErrEleven = document.createElement('img')
+        imgErrEleven.src = "./Ressources/pot-couleur.png";
+        imgErrEleven.alt = "erreur-pot-couleur";
+        imgErrEleven.id = "pot-couleur";
+        checkErreur.appendChild(imgErrEleven);
+
+    // Erreur prise
+        var imgErrTwelve = document.createElement('img')
+        imgErrTwelve.src = "./Ressources/prise.png";
+        imgErrTwelve.alt = "erreur-prise";
+        imgErrTwelve.id = "prise";
+        checkErreur.appendChild(imgErrTwelve);
+
+    tabErreur = [imgErrOne,imgErrTwo,imgErrThree,imgErrFour,imgErrFive,imgErrSix,imgErrSeven,imgErrHeight,imgErrNine,imgErrTen,imgErrEleven,imgErrTwelve];
+    tabErreur.forEach(function(element){
+        element.addEventListener('click', function (){
+            element.style.opacity = 1;
+        });
+    })
+    moyen.disabled = true;
+})
 
 
 
