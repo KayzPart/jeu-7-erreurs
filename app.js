@@ -17,104 +17,76 @@ console.log(moyen);
 const difficile = document.querySelector('.jeuDifficile');
 console.log(difficile);
 
-var imgOriginal = document.createElement('img');
-imgOriginal.src = "./Ressources/salon-original.gif" ;
-imgOriginal.alt = "image-original-salon" ;
-original.appendChild(imgOriginal);
+// Niveau facile 
+facile.addEventListener('click', function(){
+    var imgOriginal = document.createElement('img');
+    imgOriginal.src = "./Ressources/salon-original.gif" ;
+    imgOriginal.alt = "image-original-salon" ;
+    original.appendChild(imgOriginal);
 
-var imgErreur = document.createElement('img');
-imgErreur.src = "./Ressources/salon-erreur.gif";
-imgErreur.alt = "salon-chercher-les-erreurs";
-checkErreur.appendChild(imgErreur);
+    var imgErreur = document.createElement('img');
+    imgErreur.src = "./Ressources/salon-erreur.gif";
+    imgErreur.alt = "salon-chercher-les-erreurs";
+    checkErreur.appendChild(imgErreur);
+    
+    // Erreur chien
+        var imgErrOne = document.createElement('img');
+        imgErrOne.src = "./Ressources/chien.gif";
+        imgErrOne.alt = "chien";
+        imgErrOne.id = "erreur-chien";
+        checkErreur.appendChild(imgErrOne);
 
-// Erreur chien
-var imgErrOne = document.createElement('img');
-imgErrOne.src = "./Ressources/chien.gif";
-imgErrOne.alt = "chien";
-imgErrOne.id = "erreur-chien";
-checkErreur.appendChild(imgErrOne);
+    // Erreur lampe-chien
+        var imgErrTwo = document.createElement('img');
+        imgErrTwo.src = "./Ressources/lampe-rouge.gif";
+        imgErrTwo.alt = "lampe-rouge";
+        imgErrTwo.id = "erreur-lampe";
+        checkErreur.appendChild(imgErrTwo);
 
-imgErrOne.addEventListener('click', function (){
-    imgErrOne.style.opacity = 1;
-})
+    // Erreur livre
+        var imgErrThree = document.createElement('img');
+        imgErrThree.src = "./Ressources/livre.gif";
+        imgErrThree.alt = "livre";
+        imgErrThree.id = "erreur-livre";
+        checkErreur.appendChild(imgErrThree);
 
-// Erreur lampe-chien
-var imgErrTwo = document.createElement('img');
-imgErrTwo.src = "./Ressources/lampe-rouge.gif";
-imgErrTwo.alt = "lampe-rouge";
-imgErrTwo.id = "erreur-lampe";
-checkErreur.appendChild(imgErrTwo);
+    // Erreur Obj Etagère
+        var imgErrFour = document.createElement('img');
+        imgErrFour.src = "./Ressources/objet-etagere.gif";
+        imgErrFour.alt = "erreur-objet-etagere";
+        imgErrFour.id = "objet-etagere";
+        checkErreur.appendChild(imgErrFour);
 
-imgErrTwo.addEventListener('click', function (){
-    imgErrTwo.style.opacity = 1;
-})
+    // Erreur P-mur
+        var imgErrFive = document.createElement('img');
+        imgErrFive.src = "./Ressources/point-mur.gif";
+        imgErrFive.alt = "erreur-point-mur";
+        imgErrFive.id = "point-mur";
+        checkErreur.appendChild(imgErrFive);
 
- // Erreur livre
-var imgErrThree = document.createElement('img');
-imgErrThree.src = "./Ressources/livre.gif";
-imgErrThree.alt = "livre";
-imgErrThree.id = "erreur-livre";
-checkErreur.appendChild(imgErrThree);
+    // Erreur sol
+        var imgErrSix = document.createElement('img');
+        imgErrSix.src = "./Ressources/sol.gif";
+        imgErrSix.alt = "erreur-sol";
+        imgErrSix.id = "sol";
+        checkErreur.appendChild(imgErrSix);
 
-imgErrThree.addEventListener('click', function (){
-    imgErrThree.style.opacity = 1;
-})
+    // Erreur statue 
+        var imgErrSeven = document.createElement('img');
+        imgErrSeven.src = "./Ressources/statue.gif";
+        imgErrSeven.alt = "erreur-statue";
+        imgErrSeven.id = "statue";
+        checkErreur.appendChild(imgErrSeven);
 
-// Erreur Obj Etagère
-var imgErrFour = document.createElement('img');
-imgErrFour.src = "./Ressources/objet-etagere.gif";
-imgErrFour.alt = "erreur-objet-etagere";
-imgErrFour.id = "objet-etagere";
-checkErreur.appendChild(imgErrFour);
-
-imgErrFour.addEventListener('click', function (){
-    imgErrFour.style.opacity = 1;
-})
-
-// Erreur P-mur
-var imgErrFive = document.createElement('img');
-imgErrFive.src = "./Ressources/point-mur.gif";
-imgErrFive.alt = "erreur-point-mur";
-imgErrFive.id = "point-mur";
-checkErreur.appendChild(imgErrFive);
-
-imgErrFive.addEventListener('click', function (){
-    imgErrFive.style.opacity = 1;
-})
-
-// Erreur sol
-var imgErrSix = document.createElement('img');
-imgErrSix.src = "./Ressources/sol.gif";
-imgErrSix.alt = "erreur-sol";
-imgErrSix.id = "sol";
-checkErreur.appendChild(imgErrSix);
-
-imgErrSix.addEventListener('click', function (){
-    imgErrSix.style.opacity = 1;
-})
-
-// Erreur statue 
-var imgErrSeven = document.createElement('img');
-imgErrSeven.src = "./Ressources/statue.gif";
-imgErrSeven.alt = "erreur-statue";
-imgErrSeven.id = "statue";
-checkErreur.appendChild(imgErrSeven);
-
-imgErrSeven.addEventListener('click', function (){
-    imgErrSeven.style.opacity = 1;
+        var tabErreur = [imgErrOne,imgErrTwo,imgErrThree,imgErrFour,imgErrFive,imgErrSix,imgErrSeven];
+        tabErreur.forEach(function(element){
+        element.addEventListener('click', function (){
+            element.style.opacity = 1;
+        });
+    })
 })
 
 // Bouton rejouer 
 rejouerBtn.addEventListener('click', () => {
     document.location.reload(true);
 })
-
-// // Niveau de difficultés
-// let imgMoyen
-// moyen.addEventListener('click', (e) => {
-//     niveauxJeu.style.display = "none";
-//     // jeu.style.display = "block";
-//     imgMoyen = document.createElement('img');
-//     imgMoyen.src = "./Ressources/cuisine.jpg";
-//     original.appendChild(imgMoyen);
-// })
