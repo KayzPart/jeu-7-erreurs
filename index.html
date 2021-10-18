@@ -9,11 +9,32 @@
     </head>
     <body>
         <div class="main">
-            <div id="original"></div>
-            <div id="check-erreur">
+            <h1>Jeu des 7 erreurs !</h1>
+            <!-- <div class="niveaux-jeu">
+                <h1 class="h-niveau-jeu">Choisis ton niveau ! </h1>
+                <div class="niveaux">
+                    <button type="button" class="jeuFacile">Facile</button>
+                    <button type="button" class="jeuMoyen">Moyen</button>
+                    <button type="button" class="jeuDifficile">Difficile</button>
+                </div>
+            </div> -->
+            
+            <div id="jeu">
+                <div class="titre-image">
+                   <h2>Image Originale</h2>  
+                   <div id="original"></div>
+                </div>
+                <div class="titre-image">
+                <h2>Trouve les 7 erreurs ! </h2>
+                <div id="check-erreur"></div>
+                </div>     
+            </div>
+            <div class="option">
+                <button id="rejouer">Rejouer ?</button>
             </div>
             
         </div>
+        
         <script src="./app.js"></script>
     </body>
 </html>

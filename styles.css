@@ -1,9 +1,31 @@
 body{
     background-color: beige;
+    margin: 0;
+    padding: 20px;
+    height: 100vh;
 }
-.main{
+#jeu{
     display: flex;
     justify-content: space-around;
+}
+.titre-image{
+    text-align: center;
+}
+h1{
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+.option{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+#rejouer{
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
 }
 #check-erreur{
     position: relative;
@@ -49,4 +71,39 @@ body{
     left: 18.6%;
     top: 26.5%;
     opacity: 0;
+}
+
+/* Retoucher image erreur car mal détourer */
+@media screen and (max-width: 1280px) {
+    #jeu{
+        display: flex;
+        flex-direction: column;
+    }
+    img{
+        width: 100%;
+    }
+    .img-erreur{
+        height: 10px;
+    }
+    #statue{
+        width: 4vw;
+    }
+    #sol{
+        width: 5vw;
+    }
+    #point-mur{
+        width: 3vw;
+    }
+    #objet-etagere{
+        width: 3vw;
+    }
+    #erreur-livre {
+        width: 3vw;
+    }
+    #erreur-lampe{
+        width: 3vw;
+    }
+    #erreur-chien{
+        width: 4vw;
+    }
 }

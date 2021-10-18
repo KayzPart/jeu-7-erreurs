@@ -4,8 +4,18 @@ const original = document.getElementById('original');
 console.log(original)
 const checkErreur = document.getElementById('check-erreur');
 console.log(checkErreur)
-
-
+const rejouerBtn = document.getElementById('rejouer');
+console.log(rejouerBtn);
+const jeu = document.getElementById('jeu');
+console.log(jeu);
+const niveauxJeu = document.querySelector('.niveaux-jeu');
+console.log(niveauxJeu);
+const facile = document.querySelector('.jeuFacile');
+console.log(facile);
+const moyen = document.querySelector('.jeuMoyen');
+console.log(moyen);
+const difficile = document.querySelector('.jeuDifficile');
+console.log(difficile);
 
 var imgOriginal = document.createElement('img');
 imgOriginal.src = "./Ressources/salon-original.gif" ;
@@ -93,3 +103,18 @@ checkErreur.appendChild(imgErrSeven);
 imgErrSeven.addEventListener('click', function (){
     imgErrSeven.style.opacity = 1;
 })
+
+// Bouton rejouer 
+rejouerBtn.addEventListener('click', () => {
+    document.location.reload(true);
+})
+
+// // Niveau de difficultés
+// let imgMoyen
+// moyen.addEventListener('click', (e) => {
+//     niveauxJeu.style.display = "none";
+//     // jeu.style.display = "block";
+//     imgMoyen = document.createElement('img');
+//     imgMoyen.src = "./Ressources/cuisine.jpg";
+//     original.appendChild(imgMoyen);
+// })
