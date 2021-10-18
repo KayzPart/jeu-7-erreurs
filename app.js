@@ -192,7 +192,154 @@ moyen.addEventListener('click', function(){
     moyen.disabled = true;
 })
 
+// Niveau Difficile 
+difficile.addEventListener('click', function(){
+    imgOriginal = document.createElement('img');
+    imgOriginal.src = "./Ressources/times-square.jpg" ;
+    imgOriginal.alt = "times-square-original" ;
+    original.appendChild(imgOriginal);
 
+    imgErreur = document.createElement('img');
+    imgErreur.src = "./Ressources/times-square-erreur.png";
+    imgErreur.alt = "times-square-chercher-les-erreurs";
+    checkErreur.appendChild(imgErreur);
+
+    // Erreur bouton aiguille
+    var imgErrOne = document.createElement('img');
+        imgErrOne.src = "./Ressources/aiguille.png";
+        imgErrOne.alt = "erreur-aiguille";
+        imgErrOne.id = "aiguille";
+        checkErreur.appendChild(imgErrOne);
+
+    // Erreur couleur colombe
+        var imgErrTwo = document.createElement('img');
+        imgErrTwo.src = "./Ressources/colombe.png";
+        imgErrTwo.alt = "erreur-colombe";
+        imgErrTwo.id = "colombe";
+        checkErreur.appendChild(imgErrTwo);
+
+    // Erreur D
+        var imgErrThree = document.createElement('img');
+        imgErrThree.src = "./Ressources/d.png";
+        imgErrThree.alt = "erreur-d";
+        imgErrThree.id = "d";
+        checkErreur.appendChild(imgErrThree);
+
+    // Erreur drapeau
+        var imgErrFour = document.createElement('img');
+        imgErrFour.src = "./Ressources/drapeau.png";
+        imgErrFour.alt = "erreur-drapeau";
+        imgErrFour.id = "drapeau";
+        checkErreur.appendChild(imgErrFour);
+
+    // Erreur femme
+        var imgErrFive = document.createElement('img');
+        imgErrFive.src = "./Ressources/femme.png";
+        imgErrFive.alt = "erreur-femme";
+        imgErrFive.id = "femme";
+        checkErreur.appendChild(imgErrFive);
+
+    // Erreur fenetre-b
+        var imgErrSix = document.createElement('img');
+        imgErrSix.src = "./Ressources/fenetre-b.png";
+        imgErrSix.alt = "erreur-fenetre-b";
+        imgErrSix.id = "fenetre-b";
+        checkErreur.appendChild(imgErrSix);
+
+    // Erreur fenetre
+        var imgErrSeven = document.createElement('img');
+        imgErrSeven.src = "./Ressources/fenetre.png";
+        imgErrSeven.alt = "erreur-fenetre";
+        imgErrSeven.id = "fenetre";
+        checkErreur.appendChild(imgErrSeven);
+
+    // Erreur h-affiche
+        var imgErrHeight = document.createElement('img')
+        imgErrHeight.src = "./Ressources/h-affiche.png";
+        imgErrHeight.alt = "erreur-h-affiche";
+        imgErrHeight.id = "h-affiche";
+        checkErreur.appendChild(imgErrHeight);
+
+    //  Erreur h
+        var imgErrNine = document.createElement('img')
+        imgErrNine.src = "./Ressources/h.png";
+        imgErrNine.alt = "erreur-h";
+        imgErrNine.id = "h";
+        checkErreur.appendChild(imgErrNine);
+
+    // Erreur horloge-nok
+        var imgErrTen = document.createElement('img')
+        imgErrTen.src = "./Ressources/horloge-nok.png";
+        imgErrTen.alt = "erreur-horloge-nok";
+        imgErrTen.id = "horloge-nok";
+        checkErreur.appendChild(imgErrTen);
+
+    // Erreur horloge-ok
+        var imgErrEleven = document.createElement('img')
+        imgErrEleven.src = "./Ressources/horloge-ok.png";
+        imgErrEleven.alt = "erreur-horloge-ok";
+        imgErrEleven.id = "horloge-ok";
+        checkErreur.appendChild(imgErrEleven);
+
+    // Erreur lampadaire
+        var imgErrTwelve = document.createElement('img')
+        imgErrTwelve.src = "./Ressources/lampadaire.png";
+        imgErrTwelve.alt = "erreur-lampadaire";
+        imgErrTwelve.id = "lampadaire";
+        checkErreur.appendChild(imgErrTwelve);
+
+    // Erreur lumiere
+        var imgErrThirteen = document.createElement('img')
+        imgErrThirteen.src = "./Ressources/lumiere.png";
+        imgErrThirteen.alt = "erreur-lumiere";
+        imgErrThirteen.id = "lumiere";
+        checkErreur.appendChild(imgErrThirteen);
+
+    // Erreur nuage
+        var imgErrFourteen = document.createElement('img')
+        imgErrFourteen.src = "./Ressources/nuage.png";
+        imgErrFourteen.alt = "erreur-nuage";
+        imgErrFourteen.id = "nuage";
+        checkErreur.appendChild(imgErrFourteen);
+
+    // Erreur parabol
+        var imgErrFifteen = document.createElement('img')
+        imgErrFifteen.src = "./Ressources/parabol.png";
+        imgErrFifteen.alt = "erreur-parabol";
+        imgErrFifteen.id = "parabol";
+        checkErreur.appendChild(imgErrFifteen);
+
+    // Erreur phare
+        var imgErrSixteen = document.createElement('img')
+        imgErrSixteen.src = "./Ressources/phare.png";
+        imgErrSixteen.alt = "erreur-phare";
+        imgErrSixteen.id = "phare";
+        checkErreur.appendChild(imgErrSixteen);
+
+    // vago
+        var imgErrSeventeen = document.createElement('img')
+        imgErrSeventeen.src = "./Ressources/vago-1.png";
+        imgErrSeventeen.alt = "erreur-vago-1";
+        imgErrSeventeen.id = "vago-1";
+        checkErreur.appendChild(imgErrSeventeen);
+
+        var imgErrSeventeen = document.createElement('img')
+
+    tabErreur = [imgErrOne,imgErrTwo,imgErrThree,imgErrFour,imgErrFive,imgErrSix,imgErrSeven,imgErrHeight,imgErrNine,imgErrTwelve,imgErrThirteen,imgErrFifteen,imgErrSixteen,imgErrSeventeen];
+    tabErreur.forEach(function(element){
+        element.addEventListener('click', function (){
+            element.style.opacity = 1;
+        });
+        imgErrFourteen.addEventListener('click', function(){
+            imgErrFourteen.style.opacity = 0;
+        })
+        imgErrTen.addEventListener('click', function(){
+            imgErrTen.style.opacity = 0;
+            imgErrEleven.style.opacity = 1;
+        })
+    })
+    difficile.disabled = true;
+})
 
 
 // Bouton rejouer 

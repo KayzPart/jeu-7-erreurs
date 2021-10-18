@@ -77,54 +77,163 @@ h1{
 /* Moyen */
 #bouton-trancheuse{
     position: absolute;
+    bottom: 21.4%;
+    left: 14.5%;
     opacity: 0;
 }
 #couleur-assiette{
     position: absolute;
+    top: 52%;
+    right: 40.5%;
     opacity: 0;
 }
 #fissure{
     position: absolute;
+    right: 19%;
     opacity: 0;
 }
 #fleur-plat{
     position: absolute;
+    right: 42%;
+    top: 9%;
     opacity: 0;
 }
 #fleur-serviette{
     position: absolute;
+    left: 0.5%;
+    bottom: 42%;
     opacity: 0;
 }
 #manche-cuivre{
     position: absolute;
+    left: 6%;
+    top: 6.2%;
     opacity: 0;
 }
 #mosaique{
     position: absolute;
+    bottom: 21.2%;
+    right: 31.5%;
     opacity: 0;
 }
 #plaque-trancheuse{
     position: absolute;
+    bottom: 16%;
+    left: 1.1%;
     opacity: 0;
 }
 #poignée-porte{
     position: absolute;
+    bottom: 1.5%;
+    right: 16%;
     opacity: 0;
+    
 }
 #pomme{
     position: absolute;
+    bottom: 41.3%;
+    right: 0.2%;
     opacity: 0;
 }
 #pot-couleur{
     position: absolute;
+    bottom: 19.5%;
+    right: 25%;
     opacity: 0;
 }
 #prise{
     position: absolute;
     left: 29%;
     bottom: 24.5%;
-    /* opacity: 0; */
+    opacity: 0;
 }
+
+/* Difficile */
+#aiguille{
+    position: absolute;
+    opacity: 0;
+}
+#colombe{
+    position: absolute;
+    opacity: 0;
+}
+#d{
+    position: absolute;
+    opacity: 0;
+}
+#drapeau{
+    position: absolute;
+    opacity: 0;
+}
+#femme{
+    position: absolute;
+    opacity: 0;
+}
+#fenetre-b{
+    position: absolute;
+    opacity: 0;
+}
+#fenetre{
+    position: absolute;
+    opacity: 0;
+}
+#h-affiche{
+    position: absolute;
+    opacity: 0;
+}
+#h{
+    position: absolute;
+    opacity: 0;
+}
+#horloge-nok{
+    position: absolute;
+    left: 21%;
+    top: 51%;
+    opacity: 1;
+}
+#horloge-ok{
+    position: absolute;
+    left: 23.8%;
+    bottom: 44%;
+    opacity: 0;
+}
+#lampadaire{
+    position: absolute;
+    top: 29%;
+    left: 44%;
+    opacity: 0; 
+}
+#lumiere{
+    position: absolute;
+    top: 8%;
+    left: 11%;
+    opacity: 0; 
+}
+#nuage{
+    position: absolute;
+    right: 22.5%;
+    opacity: 1; 
+}
+#parabol{
+    position: absolute;
+    left: 23.5%;
+    top: 21%;
+    opacity: 0; 
+}
+#phare{
+    position: absolute;
+    bottom: 8.5%;
+    right: 20.5%;
+    opacity: 0; 
+}
+#vago-1{
+    position: absolute;
+    bottom: 7.6%;
+    right: 4.4%;
+    opacity: 0; 
+}
+
+
 
 
 /* Retoucher image erreur car mal détourer */
