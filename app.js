@@ -80,11 +80,16 @@ facile.addEventListener('click', function(){
 
         var tabErreur = [imgErrOne,imgErrTwo,imgErrThree,imgErrFour,imgErrFive,imgErrSix,imgErrSeven];
         tabErreur.forEach(function(element){
-        element.addEventListener('click', function (){
-            element.style.opacity = 1;
-        });
-    })
+            element.addEventListener('click', function (){
+                element.style.opacity = 1;
+            });
+        })
+    facile.disabled = true;   
 })
+
+
+
+
 
 // Bouton rejouer 
 rejouerBtn.addEventListener('click', () => {
